@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="docs/styles/style.css" />
+    <title>One Piece</title>
+  </head>
+  <body>
+    <main>
+      <!-- #game-intro is initially shown on the game start screen -->
+      <div id="game-intro">
+        <img src="docs/images/One-Piece-Logo.png" alt="" class="logo-img" />
+        <br />
+        <img id="start-button" src="docs/images/start-game.png" alt="Start Game" class="start-button-img" />
+        <!-- <button id="start-button">Start Game</button> -->
+        <!-- <p>Use the left and right arrow to control the car!</p> -->
+        <!--<img src="./images/arrows.png" alt="" class="arrows-img" /> -->
+        <audio id="intro" src="docs/sound/intro.mp3" ></audio>
+      </div>
+
+      <div id="game-container">
+        <div>
+          <div id="first-box">
+            <h2>Stats</h2>
+          </div>
+        
+          <div id="first-box">
+            <p>Score: <span id="score">0</span></p>
+          </div>
+          <div id="first-box">
+            <p>Lives: <span id="lives">3</span></p>
+          </div>
+        
+        </div>
+        <!-- #game-screen is initially hidden using CSS style display: none -->
+       
+        <div id="game-screen">
+          <audio id="soundtrack" src="./docs/sound/game.mp3" loop></audio>
+          <audio id="eating" src="./docs/sound/eating.mp3" ></audio>
+          <audio id="losing" src="./docs/sound/losing.mp3" ></audio>
+        </div>
+        
+      </div>
+      
+      <!-- #game-win is initially hidden using CSS style display: none -->
+      <div id="game-win">
+        <img src="./docs/images/win-game.jpg" alt="" class="logo-img" />
+        <h1>Game Won</h1>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+
+      <!-- #game-end is initially hidden using CSS style display: none -->
+      <div id="game-end">
+        <img src="./docs/images/game-over.png" alt="" class="logo-img" />
+        <h1>Game Over</h1>
+        <br />
+        <button id="restart-button2">Restart</button>
+      </div>
+    </main>
+
+    
+    <script type="text/javascript" src="docs/js/obstacle.js"></script>
+    <script type="text/javascript" src="docs/js/player.js"></script>
+    <script type="text/javascript" src="docs/js/game.js"></script>
+    <script type="text/javascript" src="docs/js/script.js"></script>
+  </body>
+</html>
